@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'SGURLProtocol'
   s.homepage     = 'https://github.com/cabbiepete/SGURLProtocol/'
-  s.version      = '1.2.3'
+  s.version      = '1.0.1'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = 'Basic and Digest/NTML Access Authentication support for iOS UIWebView.'
   s.author       = { 'Synapsesoft, Inc.' =>'kusatsugu@synapsesoft.co.jp', 'Peter Simmons' => 'cabbiepete@gmail.com' }
