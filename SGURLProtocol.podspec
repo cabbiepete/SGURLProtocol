@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Synapsesoft, Inc.' =>'kusatsugu@synapsesoft.co.jp', 'Peter Simmons' => 'cabbiepete@gmail.com' }
   s.source       = { :git => 'https://github.com/cabbiepete/SGURLProtocol.git', :tag => "v#{s.version}" }
   s.platform     = :ios, '5.0'
-  s.source_files = 'SGURLProtocol/**/*.{h,m}'
+  s.source_files = 'SGURLProtocol/*.{h,m}'
   s.frameworks   = 'Foundation', 'CFNetwork'
   s.libraries    = 'z'
   s.requires_arc = true

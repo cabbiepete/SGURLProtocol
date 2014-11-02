@@ -346,7 +346,7 @@ typedef enum {
             long long capacity = _URLResponse.expectedContentLength;
             if (capacity == NSURLResponseUnknownLength || capacity == 0)
                 capacity = 1024*1024;//10M buffer
-            _buffer = [[NSMutableData alloc] initWithCapacity:capacity];
+            _buffer = [[NSMutableData alloc] initWithCapacity:(NSUInteger)capacity];
         }
         
         NSURLCacheStoragePolicy policy = NSURLCacheStorageAllowed;
