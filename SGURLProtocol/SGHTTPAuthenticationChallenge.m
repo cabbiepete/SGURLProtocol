@@ -53,6 +53,10 @@
     else if ([(__bridge NSString *)authMethod isEqualToString:(NSString *)kCFHTTPAuthenticationSchemeDigest]) {
         authenticationMethod = NSURLAuthenticationMethodHTTPDigest;
     }
+	else if ([(__bridge NSString *)authMethod isEqualToString:(NSString *)kCFHTTPAuthenticationSchemeNTLM]) {
+		authenticationMethod = NSURLAuthenticationMethodNTLM;
+	}
+	// @TODO: Should we add the others as well??
     else {
         CFRelease(authMethod);
         return nil;
